@@ -9,6 +9,7 @@ import styled from "styled-components";
 import Input from "../components/Input";
 import { CiSearch } from "react-icons/ci";
 import useIsMobile from "../hooks/IsMobile";
+import ShowDesktop from "../components/viewport/DesktopView";
 
 const InputWrapper = styled.div`
   position: relative;
@@ -28,7 +29,7 @@ const SearchIconBox = styled.div`
 const Header = () => {
   const isMobile = useIsMobile();
   return (
-    <Container>
+    <Container bg={COLORS.white}>
       <Flex p="1rem 2rem" justify="space-between">
         <Flex>
           {isMobile ? (
@@ -43,7 +44,7 @@ const Header = () => {
             </>
           )}
         </Flex>
-        {!isMobile && (
+        <ShowDesktop>
           <Flex>
             <IconButton>
               <Text>Home</Text>
@@ -70,7 +71,7 @@ const Header = () => {
               </SearchIconBox>
             </InputWrapper>
           </Flex>
-        )}
+        </ShowDesktop>
       </Flex>
     </Container>
   );

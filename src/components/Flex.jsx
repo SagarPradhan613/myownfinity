@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
-import { COLORS } from "../utils/colors";
 
 const FlexComponent = styled.div`
   display: flex;
@@ -12,11 +11,12 @@ const FlexComponent = styled.div`
   max-width: ${({ maxWidth }) => maxWidth || "auto"};
   margin: ${({ m }) => m || "0px"};
   padding: ${({ p }) => p || "0px"};
-  background: ${({ bg }) => bg || COLORS.white};
+  background: ${({ bg }) => bg || "transparent"};
   margin-top: ${({ mt }) => mt};
   margin-bottom: ${({ mb }) => mb};
   padding-top: ${({ pt }) => pt};
   padding-top: ${({ pb }) => pb};
+  position: relative;
 `;
 
 function Flex({
@@ -32,6 +32,8 @@ function Flex({
   mb,
   pt,
   pb,
+  width,
+  gap
 }) {
   return (
     <FlexComponent
@@ -46,6 +48,8 @@ function Flex({
       mb={mb}
       pt={pt}
       pb={pb}
+      width={width}
+      gap={gap}
     >
       {children}
     </FlexComponent>

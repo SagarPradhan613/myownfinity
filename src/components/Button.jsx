@@ -6,7 +6,7 @@ const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
   white-space: nowrap;
   background: ${({ bg }) => bg || COLORS.gradient};
   color: ${({ color }) => color || "white"};
