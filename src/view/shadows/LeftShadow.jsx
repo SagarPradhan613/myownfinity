@@ -20,7 +20,7 @@ const ShadowWrapper = styled.div`
 const LeftShadow = ({ top, left, width }) => {
   return (
     <ShadowWrapper top={top} left={left} width={width}>
-      <Image src={IMAGE_COLLECTIONS.leftShadow} width="100%" />
+      <Image src={IMAGE_COLLECTIONS.leftShadow} width="100%" mobileWidth="100%" />
     </ShadowWrapper>
   );
 };

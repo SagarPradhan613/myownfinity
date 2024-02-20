@@ -9,18 +9,18 @@ const ShadowWrapper = styled.div`
   right: ${({ right }) => right || "0px"};
   z-index: 1;
   width: ${({ width }) => width || "1000px"};
-  @media screen and (max-width: 720px) {
-    width: 350px;
-  }
   @media only screen and (max-width: 1300px) and (min-width: 720px) {
     width: 400px;
+  }
+  @media screen and (max-width: 720px) {
+    width: 100%;
   }
 `;
 
 const RightShadow = ({ top, right, width }) => {
   return (
     <ShadowWrapper top={top} right={right} width={width}>
-      <Image src={IMAGE_COLLECTIONS.rightShadow} width="100%" />
+      <Image src={IMAGE_COLLECTIONS.rightShadow} width="100%" mobileWidth="100%" />
     </ShadowWrapper>
   );
 };
