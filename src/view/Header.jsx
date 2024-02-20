@@ -1,4 +1,3 @@
-import Container from "../components/Container";
 import Flex from "../components/Flex";
 import Image from "../components/Image";
 import Text from "../components/Text";
@@ -10,6 +9,13 @@ import Input from "../components/Input";
 import { CiSearch } from "react-icons/ci";
 import useIsMobile from "../hooks/IsMobile";
 import ShowDesktop from "../components/viewport/DesktopView";
+
+const HeaderWrapper = styled.div`
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  background: ${COLORS.white};
+`;
 
 const InputWrapper = styled.div`
   position: relative;
@@ -24,17 +30,17 @@ const SearchIconBox = styled.div`
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   cursor: pointer;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   &:hover {
     background: ${COLORS.gradientReverse};
-    color: ${COLORS.white}
+    color: ${COLORS.white};
   }
 `;
 
 const Header = () => {
   const isMobile = useIsMobile();
   return (
-    <Container bg={COLORS.white}>
+    <HeaderWrapper >
       <Flex p="1rem 2rem" justify="space-between">
         <Flex>
           {isMobile ? (
@@ -78,7 +84,7 @@ const Header = () => {
           </Flex>
         </ShowDesktop>
       </Flex>
-    </Container>
+    </HeaderWrapper>
   );
 };
 

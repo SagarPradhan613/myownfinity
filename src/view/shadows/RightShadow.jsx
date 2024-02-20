@@ -10,12 +10,12 @@ const ShadowWrapper = styled.div`
   z-index: 1;
 `;
 
-const LeftShadow = ({ top, right }) => {
+const LeftShadow = ({ top, right ,width="1000px"}) => {
   return (
     <ShadowWrapper top={top} right={right}>
       <Image
         src={IMAGE_COLLECTIONS.rightShadow}
-        width="1200px"
+        width={width}
         mobileWidth="300px"
       />
     </ShadowWrapper>

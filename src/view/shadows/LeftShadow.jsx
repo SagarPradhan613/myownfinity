@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Image from "../../components/Image";
 import { IMAGE_COLLECTIONS } from "../../utils/images";
 
-
 const ShadowWrapper = styled.div`
   position: absolute;
   top: ${({ top }) => top || "0px"};
@@ -11,11 +10,14 @@ const ShadowWrapper = styled.div`
   z-index: 1;
 `;
 
-const LeftShadow = ({ top, left }) => {
-
+const LeftShadow = ({ top, left, width = "1000px" }) => {
   return (
     <ShadowWrapper top={top} left={left}>
-      <Image src={IMAGE_COLLECTIONS.leftShadow} width="1200px" mobileWidth="300px" />
+      <Image
+        src={IMAGE_COLLECTIONS.leftShadow}
+        width={width}
+        mobileWidth="300px"
+      />
     </ShadowWrapper>
   );
 };

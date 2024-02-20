@@ -12,6 +12,7 @@ import { Container, Row, Col } from "react-awesome-styled-grid";
 import FloatingContent from "../view/FloatingContent";
 import { IMAGE_COLLECTIONS } from "../utils/images";
 import useIsTab from "../hooks/IsTab";
+import Section from "../components/Section";
 
 const ContentBox = styled.div`
   border-radius: 25px;
@@ -42,7 +43,7 @@ const Hero = () => {
   const isMobile = useIsMobile();
   const isTab = useIsTab()
   return (
-    <Flex direction="column" height={isMobile ? "100%" : "90vh"}>
+    <Section mt="5rem">
       <LeftShadow top={isMobile ? "0rem" : "-55rem"} />
       <RightShadow top={isMobile ? "0rem" : "0rem"} />
       <ContentBox>
@@ -88,7 +89,7 @@ const Hero = () => {
           </Row>
         </Container>
       </ContentBox>
-    </Flex>
+    </Section>
   );
 };
 

@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import Flex from "../components/Flex";
 import Heading from "../components/Heading";
 import Text from "../components/Text";
 import useIsMobile from "../hooks/IsMobile";
 import SecondaryCard from "../view/SecondaryCard";
 import { IMAGE_COLLECTIONS } from "../utils/images";
 import LeftShadow from "../view/shadows/LeftShadow";
+import Section from "../components/Section";
 
 const FlexWrapper = styled.div`
   width: 100%;
@@ -22,8 +22,8 @@ function SecondarySection() {
   const description =
     "Lorem ipsum is a placeholder text commonly used to the visual form of a document or a typeface without relying on meaningful content.";
   return (
-    <Flex height={isMobile ? "100%" : "80vh"} direction="column">
-          <LeftShadow top={isMobile ? "0rem" : "-30rem"} /> 
+    <Section>
+      <LeftShadow top={isMobile ? "0rem" : "-30rem"} />
       <Heading align="center" maxWidth="1400px">
         Get Your Hands On <br /> 4000+ Assets all over the platform
       </Heading>
@@ -54,7 +54,7 @@ function SecondarySection() {
           description={description}
         />
       </FlexWrapper>
-    </Flex>
+    </Section>
   );
 }
 

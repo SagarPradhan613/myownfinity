@@ -10,6 +10,12 @@ import secondayimage1 from "../assets/images/secondary-card-image1.svg";
 import secondayimage2 from "../assets/images/secondary-card-image2.svg";
 import secondayimage3 from "../assets/images/secondary-card-image3.svg";
 import secondayimage4 from "../assets/images/secondary-card-image4.svg";
+import ownerShipMain from "../assets/images/ownership-main.svg";
+import partner1 from "../assets/images/partner1.svg";
+import partner2 from "../assets/images/partner2.svg";
+import partner3 from "../assets/images/partner3.svg";
+import partner4 from "../assets/images/partner4.svg";
+import partner5 from "../assets/images/partner5.svg";
 
 export const IMAGE_COLLECTIONS = {
   TextIcon,
@@ -24,4 +30,10 @@ export const IMAGE_COLLECTIONS = {
   secondayimage2,
   secondayimage3,
   secondayimage4,
+  ownerShipMain,
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
 };
