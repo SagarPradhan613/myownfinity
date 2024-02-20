@@ -8,16 +8,19 @@ const ShadowWrapper = styled.div`
   top: ${({ top }) => top || "0px"};
   left: ${({ left }) => left || "0px"};
   z-index: 1;
+  width: ${({ width }) => width || "1000px"};
+  @media screen and (max-width: 720px) {
+    width: 350px;
+  }
+  @media only screen and (max-width: 1300px) and (min-width: 720px) {
+    width: 400px;
+  }
 `;
 
-const LeftShadow = ({ top, left, width = "1000px" }) => {
+const LeftShadow = ({ top, left, width }) => {
   return (
-    <ShadowWrapper top={top} left={left}>
-      <Image
-        src={IMAGE_COLLECTIONS.leftShadow}
-        width={width}
-        mobileWidth="300px"
-      />
+    <ShadowWrapper top={top} left={left} width={width}>
+      <Image src={IMAGE_COLLECTIONS.leftShadow} width="100%" />
     </ShadowWrapper>
   );
 };

@@ -41,9 +41,8 @@ const SwapWrapp = styled.div`
   }
   @media only screen and (max-width: 1300px) and (min-width: 720px) {
     width: 400px;
-  height: 200px;
-}
-
+    height: 200px;
+  }
 `;
 
 function OwnerShipSection() {
@@ -81,7 +80,7 @@ function OwnerShipSection() {
         <FloatingContent
           image={IMAGE_COLLECTIONS.LContainer2}
           bottom="8rem"
-          right="-1rem"
+          right="0rem"
           width="90px"
         />
         <Container style={{ maxWidth: "100%", padding: "0px" }}>

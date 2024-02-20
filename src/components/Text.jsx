@@ -9,12 +9,31 @@ const StyledText = styled.p`
   max-width: ${({ maxWidth }) => maxWidth || "100%"};
   color: ${({ color }) => color || COLORS.black};
   text-align: ${({ align }) => align || "start"};
+  white-space: ${({ overflow }) => (overflow ? "nowrap" : "normal")};
   @media screen and (max-width: 720px) {
     font-size: 13px;
   }
+  &:hover {
+    ${({ hover }) =>
+      hover &&
+      `
+      background: -webkit-linear-gradient(${COLORS.gradientText});
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    `}
+  }
 `;
 
-function Text({ children, size, weight, maxWidth, color, align }) {
+function Text({
+  children,
+  size,
+  weight,
+  maxWidth,
+  color,
+  align,
+  hover = false,
+  overflow = false,
+}) {
   return (
     <StyledText
       size={size}
@@ -22,6 +41,8 @@ function Text({ children, size, weight, maxWidth, color, align }) {
       maxWidth={maxWidth}
       color={color}
       align={align}
+      hover={hover}
+      overflow={overflow}
     >
       {children}
     </StyledText>

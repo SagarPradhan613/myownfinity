@@ -41,20 +41,39 @@ const JoinWrap = styled.div`
 
 const Hero = () => {
   const isMobile = useIsMobile();
-  const isTab = useIsTab()
+  const isTab = useIsTab();
   return (
     <Section mt="5rem">
-      <LeftShadow top={isMobile ? "0rem" : "-55rem"} />
+      <LeftShadow top={isMobile ? "0rem" : "-55rem"}  />
       <RightShadow top={isMobile ? "0rem" : "0rem"} />
       <ContentBox>
-      <FloatingContent image={IMAGE_COLLECTIONS.BoxContainer1} top="15rem" left="50rem" width="60px" />
-      <FloatingContent image={IMAGE_COLLECTIONS.BoxContainer2} top="-2rem" left="45rem"  width="90px" />
-      <FloatingContent image={IMAGE_COLLECTIONS.LContainer1} top="25rem" left="40rem" width="140px" />
-      {!isTab && (
-
-      <FloatingContent image={IMAGE_COLLECTIONS.LContainerHalf} top="8rem" right="-3rem" width="60px" />
-      )}
-        <Container style={{maxWidth:'100%',padding:'0px'}}>
+        <FloatingContent
+          image={IMAGE_COLLECTIONS.BoxContainer1}
+          top="15rem"
+          left="50rem"
+          width="60px"
+        />
+        <FloatingContent
+          image={IMAGE_COLLECTIONS.BoxContainer2}
+          top="-2rem"
+          left="45rem"
+          width="90px"
+        />
+        <FloatingContent
+          image={IMAGE_COLLECTIONS.LContainer1}
+          top="25rem"
+          left="40rem"
+          width="140px"
+        />
+        {!isTab && (
+          <FloatingContent
+            image={IMAGE_COLLECTIONS.LContainerHalf}
+            top="8rem"
+            right="-2rem"
+            width="60px"
+          />
+        )}
+        <Container style={{ maxWidth: "100%", padding: "0px" }}>
           <Row>
             <Col xs={12} sm={12} md={4} lg={7.5}>
               <Flex
@@ -63,9 +82,11 @@ const Hero = () => {
                 mb="3rem"
               >
                 <JoinWrap>
-                  <Text size="20px">Ownfinity</Text>
-                  <Text>|</Text>
-                  <Text>Join us now!</Text>
+                  <Text size="20px" hover>
+                    Ownfinity
+                  </Text>
+                  <Text hover>|</Text>
+                  <Text hover>Join us now!</Text>
                 </JoinWrap>
                 <Heading maxWidth="800px" align={isMobile ? "center" : "start"}>
                   Dealing in Real World Assets
@@ -84,7 +105,7 @@ const Hero = () => {
               </Flex>
             </Col>
             <Col xs={12} sm={12} md={4} lg={4.5}>
-              <SignUp />      
+              <SignUp />
             </Col>
           </Row>
         </Container>

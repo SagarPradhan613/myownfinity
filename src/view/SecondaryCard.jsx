@@ -61,7 +61,7 @@ function SecondaryCard({ title, description, image, hoverImage }) {
               gap="1px"
               m="0px 0px 10px 15px"
             >
-              <Text weight={700}>{title}</Text>
+              <Text weight={700} hover>{title}</Text>
               <Text size="15px">{description}</Text>
             </Flex>
           </Col>

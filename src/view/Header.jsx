@@ -7,7 +7,6 @@ import IconButton from "../components/IconButton";
 import styled from "styled-components";
 import Input from "../components/Input";
 import { CiSearch } from "react-icons/ci";
-import useIsMobile from "../hooks/IsMobile";
 import ShowDesktop from "../components/viewport/DesktopView";
 
 const HeaderWrapper = styled.div`
@@ -38,42 +37,35 @@ const SearchIconBox = styled.div`
 `;
 
 const Header = () => {
-  const isMobile = useIsMobile();
   return (
-    <HeaderWrapper >
+    <HeaderWrapper>
       <Flex p="1rem 2rem" justify="space-between">
         <Flex>
-          {isMobile ? (
-            <>
-              <Image src={IMAGE_COLLECTIONS.TextIcon} />
-            </>
-          ) : (
-            <>
-              <Image src={IMAGE_COLLECTIONS.TextIcon} width="150px" />
-              <Text>|</Text>
-              <Text color={COLORS.light}>Dealing Real World Assets</Text>
-            </>
-          )}
+          <Image src={IMAGE_COLLECTIONS.TextIcon} width="150px" />
+          <Text>|</Text>
+          <Text color={COLORS.light} size="15px">
+            Dealing Real World Assets
+          </Text>
         </Flex>
         <ShowDesktop>
           <Flex>
             <IconButton>
-              <Text>Home</Text>
+              <Text size="15px" hover>Home</Text>
             </IconButton>
             <IconButton>
-              <Text>Buy/Sell</Text>
+              <Text size="15px" hover overflow>Buy/Sell</Text>
             </IconButton>
             <IconButton>
-              <Text>Lend</Text>
+              <Text size="15px" hover>Lend</Text>
             </IconButton>
             <IconButton>
-              <Text>Betting</Text>
+              <Text size="15px" hover>Betting</Text>
             </IconButton>
             <IconButton>
-              <Text>Auction</Text>
+              <Text size="15px" hover>Auction</Text>
             </IconButton>
             <IconButton>
-              <Text>Shared Ownership</Text>
+              <Text size="15px" hover overflow>Shared Ownership</Text>
             </IconButton>
             <InputWrapper>
               <Input placeholder="Search" />

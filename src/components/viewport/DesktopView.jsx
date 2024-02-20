@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ShowDesktop = styled.div`
   display: block;
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;

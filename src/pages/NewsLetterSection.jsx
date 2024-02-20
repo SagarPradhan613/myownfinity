@@ -40,8 +40,8 @@ function NewsLetterSection() {
         <FloatingContent
           image={IMAGE_COLLECTIONS.LContainer1}
           top="-2rem"
-          left="-2rem"
-          width="140px"
+          left="-1rem"
+          width="120px"
         />
    
         <FloatingContent
@@ -53,8 +53,8 @@ function NewsLetterSection() {
         <FloatingContent
           image={IMAGE_COLLECTIONS.LContainer2}
           bottom="4rem"
-          right="-1rem"
-          width="90px"
+          right="0rem"
+          width="80px"
         />
         <Container style={{ maxWidth: "100%", padding: "0px" }}>
           <Row>

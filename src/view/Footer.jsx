@@ -9,6 +9,9 @@ import { IMAGE_COLLECTIONS } from "../utils/images";
 import Text from "../components/Text";
 import { Links } from "../utils/footer";
 import useIsMobile from "../hooks/IsMobile";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaDiscord } from "react-icons/fa";
 
 const FooterContainer = styled.div`
   background: ${COLORS.white};
@@ -58,6 +61,11 @@ function Footer() {
                     form of a document or a typeface without relying on
                     meaningful content.
                   </Text>
+                  <Flex gap="2rem">
+                    <FaTelegramPlane fontSize="25px" />
+                    <FaXTwitter fontSize="25px" />
+                    <FaDiscord fontSize="25px" />
+                  </Flex>
                 </Flex>
               </Col>
               <Col xs={12} sm={6} md={4} lg={6}>
@@ -75,7 +83,7 @@ function Footer() {
                       </Text>
                       {items.footers.map((content, i) => (
                         <LinkTag key={i} href={content.link}>
-                          <Text>{content.name}</Text>
+                          <Text hover>{content.name}</Text>
                         </LinkTag>
                       ))}
                     </Flex>
