@@ -7,7 +7,7 @@ const ShadowWrapper = styled.div`
   position: absolute;
   top: ${({ top }) => top || "0px"};
   right: ${({ right }) => right || "0px"};
-  z-index: -1;
+  z-index: 1;
 `;
 
 const LeftShadow = ({ top, right }) => {

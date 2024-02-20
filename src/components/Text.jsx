@@ -4,7 +4,7 @@ import { COLORS } from "../utils/colors";
 
 const StyledText = styled.p`
   font-family: "poppins";
-  font-size: ${({ size }) => size || "15px"};
+  font-size: ${({ size }) => size || "18px"};
   font-weight: ${({ weight }) => weight || 400};
   max-width: ${({ maxWidth }) => maxWidth || "100%"};
   color: ${({ color }) => color || COLORS.black};

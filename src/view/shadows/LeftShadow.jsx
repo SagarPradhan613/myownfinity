@@ -8,7 +8,7 @@ const ShadowWrapper = styled.div`
   position: absolute;
   top: ${({ top }) => top || "0px"};
   left: ${({ left }) => left || "0px"};
-  z-index: -1;
+  z-index: 1;
 `;
 
 const LeftShadow = ({ top, left }) => {

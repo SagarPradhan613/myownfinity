@@ -14,8 +14,8 @@ const StyledInput = styled.input`
   }
 `;
 
-const Input = ({ placeholder, width }) => {
-  return <StyledInput placeholder={placeholder} width={width} />;
+const Input = ({ placeholder, width, type = "text" }) => {
+  return <StyledInput placeholder={placeholder} width={width} type={type} />;
 };
 
 export default Input;

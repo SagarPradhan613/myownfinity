@@ -14,14 +14,14 @@ import { FaArrowRight } from "react-icons/fa";
 const ContainerWrapper = styled.div`
   background: ${COLORS.white};
   border-radius: 25px;
-  padding: 1rem;
+  padding: 3rem 1rem;
   height: 100%;
-  width: 100%;
+  position: relative;
+  z-index: 100;
   @media screen and (max-width: 720px) {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 `;
-
 
 function SignUp() {
   const isMobile = useIsMobile();
@@ -35,8 +35,8 @@ function SignUp() {
           <Input placeholder="Enter First name" width="90%" />
           <Input placeholder="Enter Last name" width="90%" />
         </Flex>
-        <Input placeholder="Enter Email" width="90%" />
-        <Input placeholder="Enter Password" width="90%" />
+        <Input placeholder="Enter Email" width="90%" type="email" />
+        <Input placeholder="Enter Password" width="90%" type="password" />
         <Text>OR</Text>
         <Button fullWidth>
           <FaGoogle /> Continue with google
@@ -55,10 +55,15 @@ function SignUp() {
             Discord
           </Button>
         </Flex>
-        <Text size="13px" color={COLORS.light}>We do not store any data related to social login</Text>
+        <Text size="13px" color={COLORS.light}>
+          We do not store any data related to social login
+        </Text>
+        <Flex width='100%' mt="1rem" mb="0rem">
         <Button fullWidth>
-           Continue <FaArrowRight />
+          Continue <FaArrowRight />
         </Button>
+        </Flex>
+
       </Flex>
     </ContainerWrapper>
   );

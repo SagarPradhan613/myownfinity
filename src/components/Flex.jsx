@@ -8,6 +8,7 @@ const FlexComponent = styled.div`
   gap: ${({ gap }) => gap || "1rem"};
   flex-direction: ${({ direction }) => direction || "row"};
   width: ${({ width }) => width || "auto"};
+  height: ${({ height }) => height || "100%"};
   max-width: ${({ maxWidth }) => maxWidth || "auto"};
   margin: ${({ m }) => m || "0px"};
   padding: ${({ p }) => p || "0px"};
@@ -33,7 +34,8 @@ function Flex({
   pt,
   pb,
   width,
-  gap
+  gap,
+  height
 }) {
   return (
     <FlexComponent
@@ -50,6 +52,7 @@ function Flex({
       pb={pb}
       width={width}
       gap={gap}
+      height={height}
     >
       {children}
     </FlexComponent>

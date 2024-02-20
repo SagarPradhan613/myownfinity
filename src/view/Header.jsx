@@ -18,12 +18,17 @@ const InputWrapper = styled.div`
 const SearchIconBox = styled.div`
   position: absolute;
   top: 0px;
-  right: 2px;
+  right: 0px;
   background: ${COLORS.gradient};
-  padding: 8px 10px;
+  padding: 11px 10px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   cursor: pointer;
+  transition: all .5s ease-in-out;
+  &:hover {
+    background: ${COLORS.gradientReverse};
+    color: ${COLORS.white}
+  }
 `;
 
 const Header = () => {

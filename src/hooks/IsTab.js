@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
-function useIsMobile() {
+function useIsTab() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 700); 
+      setIsMobile(window.innerWidth < 1400); 
     };
 
     // Initial check
@@ -23,4 +23,4 @@ function useIsMobile() {
   return isMobile;
 }
 
-export default useIsMobile;
+export default useIsTab;
