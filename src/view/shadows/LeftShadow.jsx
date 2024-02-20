@@ -9,11 +9,12 @@ const ShadowWrapper = styled.div`
   left: ${({ left }) => left || "0px"};
   z-index: 1;
   width: ${({ width }) => width || "1000px"};
-  @media screen and (max-width: 720px) {
-    width: 350px;
-  }
+
   @media only screen and (max-width: 1300px) and (min-width: 720px) {
     width: 400px;
+  }
+  @media screen and (max-width: 720px) {
+    width: 100%;
   }
 `;
 
