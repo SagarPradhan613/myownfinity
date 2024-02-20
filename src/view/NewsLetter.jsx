@@ -10,7 +10,7 @@ const ContainerWrapper = styled.div`
   background: ${COLORS.white};
   border-radius: 25px;
   padding: 1rem;
-  height: 100%;
+  height: 150px;
   position: relative;
   z-index: 100;
   @media screen and (max-width: 720px) {

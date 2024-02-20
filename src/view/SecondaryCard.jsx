@@ -7,7 +7,7 @@ import { Container } from "react-awesome-styled-grid";
 import { Row } from "react-awesome-styled-grid";
 import { Col } from "react-awesome-styled-grid";
 import Text from "../components/Text";
-
+import { useState } from "react";
 
 const CardWrapper = styled.div`
   border-radius: 25px;
@@ -19,18 +19,50 @@ const CardWrapper = styled.div`
   z-index: 10;
 `;
 
-function SecondaryCard({ title, description, image }) {
+const ImageWrapp = styled.div`
+  position: relative;
+  width: 120px;
+  height: 120px;
+`;
+
+function SecondaryCard({ title, description, image, hoverImage }) {
+  const [hovered, setHovered] = useState(false);
+
+  const handleOnHover = () => {
+    setHovered(true);
+  };
+  const handleOffHover = () => {
+    setHovered(false);
+  };
   return (
-    <CardWrapper>
-      <Container style={{maxWidth:'100%',padding:'0px'}}>
+    <CardWrapper onMouseEnter={handleOnHover} onMouseLeave={handleOffHover}>
+      <Container style={{ maxWidth: "100%", padding: "0px" }}>
         <Row>
           <Col xs={1} sm={3} md={2} lg={3}>
-            <Image src={image} width="120px"/>
+            <ImageWrapp>
+              <Image
+                src={image}
+                width="100%"
+                position="absolute"
+                opacity={hovered ? "0" : "1"}
+              />
+              <Image
+                src={hoverImage}
+                width="100%"
+                position="absolute"
+                opacity={hovered ? "1" : "0"}
+              />
+            </ImageWrapp>
           </Col>
           <Col xs={3} sm={4} md={6} lg={9}>
-            <Flex direction="column" items="start" gap="1px" m="0px 0px 10px 15px">
-            <Text weight={700} >{title}</Text>
-            <Text size="15px" >{description}</Text>
+            <Flex
+              direction="column"
+              items="start"
+              gap="1px"
+              m="0px 0px 10px 15px"
+            >
+              <Text weight={700}>{title}</Text>
+              <Text size="15px">{description}</Text>
             </Flex>
           </Col>
         </Row>

@@ -16,6 +16,11 @@ import partner2 from "../assets/images/partner2.svg";
 import partner3 from "../assets/images/partner3.svg";
 import partner4 from "../assets/images/partner4.svg";
 import partner5 from "../assets/images/partner5.svg";
+import OwnershipMainGif from "../assets/images/ownershipgif.gif";
+import secondaygif1 from "../assets/images/Buysell.gif";
+import secondaygif2 from "../assets/images/Lend.gif";
+import secondaygif3 from "../assets/images/Betting.gif";
+import secondaygif4 from "../assets/images/Auction.gif";
 
 export const IMAGE_COLLECTIONS = {
   TextIcon,
@@ -36,4 +41,9 @@ export const IMAGE_COLLECTIONS = {
   partner3,
   partner4,
   partner5,
+  OwnershipMainGif,
+  secondaygif1,
+  secondaygif2,
+  secondaygif3,
+  secondaygif4,
 };

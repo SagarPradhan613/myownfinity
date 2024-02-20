@@ -35,22 +35,26 @@ function SecondarySection() {
       <FlexWrapper>
         <SecondaryCard
           image={IMAGE_COLLECTIONS.secondayimage1}
+          hoverImage={IMAGE_COLLECTIONS.secondaygif1}
           title="Buy/Sell Real World Assets"
           description={description}
         />
         <SecondaryCard
           image={IMAGE_COLLECTIONS.secondayimage2}
-          title="Buy/Sell Real World Assets"
+          hoverImage={IMAGE_COLLECTIONS.secondaygif2}
+          title="Lend/Borrow Real World Assets"
           description={description}
         />
         <SecondaryCard
           image={IMAGE_COLLECTIONS.secondayimage3}
-          title="Buy/Sell Real World Assets"
+          hoverImage={IMAGE_COLLECTIONS.secondaygif3}
+          title="Betting On Real World Assets"
           description={description}
         />
         <SecondaryCard
           image={IMAGE_COLLECTIONS.secondayimage4}
-          title="Buy/Sell Real World Assets"
+          hoverImage={IMAGE_COLLECTIONS.secondaygif4}
+          title="Real World Assets Auction"
           description={description}
         />
       </FlexWrapper>

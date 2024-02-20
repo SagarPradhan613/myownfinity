@@ -13,6 +13,7 @@ import Button from "../components/Button";
 import FloatingContent from "../view/FloatingContent";
 import RightShadow from "../view/shadows/RightShadow";
 import Section from "../components/Section";
+import { useState } from "react";
 
 const ContentBox = styled.div`
   border-radius: 55px;
@@ -29,8 +30,32 @@ const ContentBox = styled.div`
   }
 `;
 
+const SwapWrapp = styled.div`
+  position: relative;
+  cursor: pointer;
+  width: 600px;
+  height: 400px;
+  @media screen and (max-width: 720px) {
+    width: 350px;
+    height: 300px;
+  }
+  @media only screen and (max-width: 1300px) and (min-width: 720px) {
+    width: 400px;
+  height: 200px;
+}
+
+`;
+
 function OwnerShipSection() {
   const isMobile = useIsMobile();
+  const [hovered, setHovered] = useState(false);
+
+  const handleOnHover = () => {
+    setHovered(true);
+  };
+  const handleOffHover = () => {
+    setHovered(false);
+  };
   return (
     <Section>
       <RightShadow top={isMobile ? "0rem" : "0rem"} />
@@ -62,11 +87,25 @@ function OwnerShipSection() {
         <Container style={{ maxWidth: "100%", padding: "0px" }}>
           <Row>
             <Col xs={12} sm={4} md={4} lg={6}>
-              <Image
-                src={IMAGE_COLLECTIONS.ownerShipMain}
-                width="600px"
-                mobileWidth="300px"
-              />
+              <SwapWrapp
+                onMouseEnter={handleOnHover}
+                onMouseLeave={handleOffHover}
+              >
+                <Image
+                  src={IMAGE_COLLECTIONS.ownerShipMain}
+                  width="100%"
+                  mobileWidth="100%"
+                  position="absolute"
+                  opacity={hovered ? "0" : "1"}
+                />
+                <Image
+                  src={IMAGE_COLLECTIONS.OwnershipMainGif}
+                  width="100%"
+                  mobileWidth="100%"
+                  position="absolute"
+                  opacity={hovered ? "1" : "0"}
+                />
+              </SwapWrapp>
             </Col>
             <Col xs={12} sm={4} md={4} lg={6}>
               <Flex direction="column">

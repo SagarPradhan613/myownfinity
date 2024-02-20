@@ -40,7 +40,7 @@ function Footer() {
         <FooterWrapp>
           <Container style={{ maxWidth: "100%", padding: "0px" }}>
             <Row>
-              <Col xs={12} sm={6} md={6} lg={6}>
+              <Col xs={12} sm={6} md={4} lg={6}>
                 <Flex
                   items={isMobile ? "center" : "start"}
                   justify="start"
@@ -60,7 +60,7 @@ function Footer() {
                   </Text>
                 </Flex>
               </Col>
-              <Col xs={12} sm={6} md={6} lg={6}>
+              <Col xs={12} sm={6} md={4} lg={6}>
                 <Flex justify="space-evenly" items="start" mt="1rem">
                   {Links.map((items, i) => (
                     <Flex
