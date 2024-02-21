@@ -27,13 +27,37 @@ const StyledContentWrapp = styled.div`
   z-index: 50;
   animation: ${bounceAnimation} 5s ease-in-out infinite;
   @media screen and (max-width: 720px) {
-    display: none;
+    top: ${({ mobTop }) => mobTop};
+    left: ${({ mobLeft }) => mobLeft};
+    right: ${({ mobRight }) => mobRight};
+    bottom: ${({ mobBottom }) => mobBottom};
+    width: 40px;
   }
 `;
 
-const FloatingContent = ({ top, left, right, bottom, image, width }) => {
+const FloatingContent = ({
+  top,
+  left,
+  right,
+  bottom,
+  image,
+  width,
+  mobTop,
+  mobLeft,
+  mobRight,
+  mobBottom
+}) => {
   return (
-    <StyledContentWrapp top={top} left={left} right={right} bottom={bottom}>
+    <StyledContentWrapp
+      top={top}
+      left={left}
+      right={right}
+      bottom={bottom}
+      mobBottom={mobBottom}
+      mobTop={mobTop}
+      mobLeft={mobLeft}
+      mobRight={mobRight}
+    >
       <Image src={image} width={width} />
     </StyledContentWrapp>
   );

@@ -5,6 +5,7 @@ import { COLORS } from "../utils/colors";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import { FaArrowRight } from "react-icons/fa";
+import useIsMobile from "../hooks/IsMobile";
 
 const ContainerWrapper = styled.div`
   background: ${COLORS.white};
@@ -22,12 +23,13 @@ const ContainerWrapper = styled.div`
 const InputWrapp = styled.div`
   position: relative;
   width: 100%;
+  max-width: 500px;
 `;
 
 const ButtonWrapp = styled.div`
   position: absolute;
-  top: 2px;
-  right: 2rem;
+  top: 2.5px;
+  right: 2px;
   @media screen and (max-width: 720px) {
     right: 0rem;
     top: 3px;
@@ -35,20 +37,30 @@ const ButtonWrapp = styled.div`
 `;
 
 function NewsLetter() {
+  const isMobile = useIsMobile();
   return (
     <ContainerWrapper>
       <Flex direction="column">
         <Flex>
-          <Text size="25px" >Newsletter</Text>
+          <Text size="25px">Newsletter</Text>
         </Flex>
-        <InputWrapp>
-          <Input placeholder="Enter Email" width="90%" type="email" />
-          <ButtonWrapp>
+        {isMobile ? (
+          <Flex direction="column" width="100%" gap="0.5rem">
+            <Input placeholder="Enter Email" width="90%" type="email" />
             <Button fullWidth>
               Continue <FaArrowRight />
             </Button>
-          </ButtonWrapp>
-        </InputWrapp>
+          </Flex>
+        ) : (
+          <InputWrapp>
+            <Input placeholder="Enter Email" width="93%" type="email" />
+            <ButtonWrapp>
+              <Button fullWidth>
+                Continue <FaArrowRight />
+              </Button>
+            </ButtonWrapp>
+          </InputWrapp>
+        )}
       </Flex>
     </ContainerWrapper>
   );

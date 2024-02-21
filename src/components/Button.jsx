@@ -10,19 +10,20 @@ const StyledButton = styled.button`
   white-space: nowrap;
   background: ${({ bg }) => bg || COLORS.gradient};
   color: ${({ color }) => color || COLORS.white};
-  width: ${({ fullWidth }) => (fullWidth ? "100%" : "")};
-  border: none;
+  width: ${({ fullWidth }) => (fullWidth ? "100%" : "auto")};
+  border: 1px solid white;
   border-radius: 30px;
   padding: 0.5rem 2rem;
   cursor: pointer;
   font-family: "poppins";
-  transition: all .5s ease-in-out;
+  transition: all 0.4s ease-in-out; // Removed extra dot before ".5s"
   &:hover {
-    background: ${COLORS.gradientReverse};
-    transform: translateY(-5px);
-    color: ${COLORS.white}
+    border: 1px solid #24FFA3;
+    background: ${COLORS.white};
+    color: ${COLORS.black};
   }
 `;
+
 
 function Button({ children, bg, color, fullWidth }) {
   return (

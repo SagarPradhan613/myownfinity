@@ -8,4 +8,5 @@ export const COLORS = {
   light: "#AAAAAA",
   faded: "#ffffff57",
   darkFaded: "#00000012",
+  green: "#24FFA3",
 };

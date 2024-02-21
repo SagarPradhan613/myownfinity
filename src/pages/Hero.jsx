@@ -19,6 +19,7 @@ const ContentBox = styled.div`
   background: ${COLORS.faded};
   max-width: 1360px;
   padding: 2rem;
+  margin: 0rem 20px;
   position: relative;
   z-index: 10;
   @media screen and (max-width: 720px) {
@@ -51,12 +52,16 @@ const Hero = () => {
           image={IMAGE_COLLECTIONS.BoxContainer1}
           top="15rem"
           left="50rem"
+          mobLeft="15rem"
+          mobTop="19rem"
           width="60px"
         />
         <FloatingContent
           image={IMAGE_COLLECTIONS.BoxContainer2}
           top="-2rem"
           left="45rem"
+          mobLeft="5rem"
+          mobTop="1rem"
           width="90px"
         />
         <FloatingContent
@@ -64,6 +69,8 @@ const Hero = () => {
           top="25rem"
           left="40rem"
           width="140px"
+          mobLeft="0rem"
+          mobBottom="-10rem"
         />
         {!isTab && (
           <FloatingContent
@@ -75,7 +82,7 @@ const Hero = () => {
         )}
         <Container style={{ maxWidth: "100%", padding: "0px" }}>
           <Row>
-            <Col xs={12} sm={12} md={4} lg={7.5}>
+            <Col xs={12} sm={12} md={5} lg={7.5}>
               <Flex
                 direction="column"
                 items={isMobile ? "center" : "start"}
@@ -104,7 +111,7 @@ const Hero = () => {
                 </Flex>
               </Flex>
             </Col>
-            <Col xs={12} sm={12} md={4} lg={4.5}>
+            <Col xs={12} sm={12} md={3} lg={4.5}>
               <SignUp />
             </Col>
           </Row>

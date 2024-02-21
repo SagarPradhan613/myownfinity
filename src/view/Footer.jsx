@@ -34,6 +34,22 @@ const Line = styled.div`
   height: 0px;
   border: 1px solid ${COLORS.darkFaded};
 `;
+const SocialWrapp = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: ${COLORS.black};
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+
+  &:hover{
+    background: ${COLORS.gradient};
+    color: ${COLORS.white};
+  }
+`;
 
 function Footer() {
   const isMobile = useIsMobile();
@@ -61,10 +77,16 @@ function Footer() {
                     form of a document or a typeface without relying on
                     meaningful content.
                   </Text>
-                  <Flex gap="2rem">
-                    <FaTelegramPlane fontSize="25px" />
-                    <FaXTwitter fontSize="25px" />
-                    <FaDiscord fontSize="25px" />
+                  <Flex >
+                    <SocialWrapp>
+                      <FaTelegramPlane fontSize="25px" />
+                    </SocialWrapp>
+                    <SocialWrapp>
+                      <FaXTwitter fontSize="25px" />
+                    </SocialWrapp>
+                    <SocialWrapp>
+                      <FaDiscord fontSize="25px" />
+                    </SocialWrapp>
                   </Flex>
                 </Flex>
               </Col>

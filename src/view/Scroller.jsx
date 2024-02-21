@@ -31,8 +31,10 @@ const PartnerWrap = styled.div`
 
 const ScrollContent = styled.div`
   display: inline-block;
-  animation: ${SlideAnimation} 20s linear infinite;
-  
+
+  @media screen and (max-width: 720px) {
+    animation: ${SlideAnimation} 20s linear infinite;
+  }
 `;
 
 const Scroller = () => {
@@ -47,26 +49,31 @@ const Scroller = () => {
                 src={IMAGE_COLLECTIONS.partner1}
                 width="150px"
                 mobileWidth="250px"
+                hover
               />
               <Image
                 src={IMAGE_COLLECTIONS.partner2}
                 width="150px"
                 mobileWidth="250px"
+                hover
               />
               <Image
                 src={IMAGE_COLLECTIONS.partner3}
                 width="60px"
                 mobileWidth="100px"
+                hover
               />
               <Image
                 src={IMAGE_COLLECTIONS.partner4}
-                width="60px"
+                width="50px"
                 mobileWidth="60px"
+                hover
               />
               <Image
                 src={IMAGE_COLLECTIONS.partner5}
                 width="50px"
                 mobileWidth="60px"
+                hover
               />
             </Flex>
           </ScrollContent>
