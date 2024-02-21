@@ -5,7 +5,7 @@ function useIsTab() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1400); 
+      setIsMobile(window.innerWidth < 1480); 
     };
 
     // Initial check
