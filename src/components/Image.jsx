@@ -27,7 +27,7 @@ function Image({ width, mobileWidth, src, position, opacity, hover }) {
       opacity={opacity}
       hover={hover}
     >
-      <img src={src} width="100%" alt="image" />
+      <img src={src} width="100%" alt="asset" />
     </StylesImage>
   );
 }
