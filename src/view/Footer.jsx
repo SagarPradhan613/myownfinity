@@ -23,6 +23,10 @@ const FooterContainer = styled.div`
 
 const FooterWrapp = styled.div`
   max-width: 1360px;
+  padding: 0rem 2rem;
+  @media screen and (max-width: 720px) {
+    padding: 1rem;
+  }
 `;
 
 const LinkTag = styled.a`

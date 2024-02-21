@@ -19,8 +19,23 @@ const ContainerWrapper = styled.div`
   height: 100%;
   position: relative;
   z-index: 100;
+
   @media screen and (max-width: 720px) {
     padding: 0.5rem;
+  }
+`;
+
+const SocailIconWrapp = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  /* flex-direction: row; */
+  width: 100%;
+  max-width: 800px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1400px) {
+    /* flex-direction: column; */
   }
 `;
 
@@ -29,11 +44,11 @@ function SignUp() {
   const isTab = useIsTab();
   return (
     <ContainerWrapper>
-      <Flex direction="column" gap={isMobile ? ".5rem" : "1rem"}>
+      <Flex direction="column" gap={isTab ? ".5rem" : "1rem"}>
         <Flex>
           <Text size="20px">Sign Up</Text>
         </Flex>
-        <Flex direction={isMobile ? "column" : "row"} width="98%" gap=".5rem"> 
+        <Flex direction={isMobile ? "column" : "row"} width="98%" gap=".5rem">
           <Input placeholder="Enter First name" width="90%" />
           <Input placeholder="Enter Last name" width="90%" />
         </Flex>
@@ -43,20 +58,20 @@ function SignUp() {
         <Button fullWidth>
           <FaGoogle /> Continue with google
         </Button>
-        <Flex gap=".5rem" direction={isTab ? "column" : "row"} width="100%">
-          <Button fullWidth>
+        <SocailIconWrapp>
+          <Button fullWidth={isMobile ? true : false}>
             <FaXTwitter />
             Twitter
           </Button>
-          <Button fullWidth>
+          <Button fullWidth={isMobile ? true : false}>
             <ImFacebook2 />
             Facebook
           </Button>
-          <Button fullWidth>
+          <Button fullWidth={isMobile ? true : false}>
             <FaDiscord />
             Discord
           </Button>
-        </Flex>
+        </SocailIconWrapp>
         <Text size="13px" color={COLORS.light} align="center">
           We do not store any data related to social login
         </Text>

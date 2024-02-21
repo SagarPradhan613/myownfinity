@@ -10,6 +10,9 @@ const StyledText = styled.p`
   color: ${({ color }) => color || COLORS.black};
   text-align: ${({ align }) => align || "start"};
   white-space: ${({ overflow }) => (overflow ? "nowrap" : "normal")};
+  @media only screen and (max-width: 1300px) and (min-width: 720px) {
+    font-size: ${({ size }) => size || "15px"};
+  }
   @media screen and (max-width: 720px) {
     font-size: 13px;
   }

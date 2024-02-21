@@ -11,6 +11,9 @@ const StyledText = styled.h1`
   background: -webkit-linear-gradient(${COLORS.gradientText});
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media only screen and (max-width: 1300px) and (min-width: 720px) {
+    font-size: 50px;
+  }
   @media screen and (max-width: 720px) {
     font-size: 30px;
   }

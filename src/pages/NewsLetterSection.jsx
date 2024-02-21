@@ -21,9 +21,11 @@ const ContentBox = styled.div`
   padding: 3rem;
   position: relative;
   z-index: 10;
+  margin: 10px;
   @media screen and (max-width: 720px) {
     width: auto;
     padding: 1rem;
+    margin: 10px;
   }
   @media screen and (max-width: 1290px) {
     max-width: 1200px;
