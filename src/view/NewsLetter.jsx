@@ -32,6 +32,9 @@ const ButtonWrapp = styled.div`
   position: absolute;
   top: 2.5px;
   right: 2px;
+  @media only screen and (max-width: 1290px) and (min-width: 720px) {
+    right: -3px;
+  }
   @media screen and (max-width: 720px) {
     right: 0rem;
     top: 3px;
