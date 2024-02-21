@@ -66,9 +66,9 @@ function NewsLetterSection() {
         />
         <Container style={{ maxWidth: "100%", padding: "0px" }}>
           <Row>
-            <Col xs={12} sm={4} md={4} lg={6}>
-              <Flex direction="column">
-                <Heading size="60px" align={isMobile ? "center" : "start"}>
+            <Col xs={12} sm={4} md={4.5} lg={6}>
+              <Flex direction="column" items={isMobile ? "center" : "start"}>
+                <Heading size="50px" >
                   Subscribe Newsletter
                 </Heading>
                 <Text align={isMobile ? "center" : "start"}>
@@ -78,8 +78,10 @@ function NewsLetterSection() {
                 </Text>
               </Flex>
             </Col>
-            <Col xs={12} sm={4} md={4} lg={6}>
+            <Col xs={12} sm={4} md={3.5} lg={6}>
+              <Flex width="100%" items="center" justify="end"> 
               <NewsLetter />
+              </Flex>
             </Col>
           </Row>
         </Container>

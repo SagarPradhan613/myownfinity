@@ -30,12 +30,11 @@ const SocailIconWrapp = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  /* flex-direction: row; */
+  flex-direction: row;
   width: 100%;
   max-width: 800px;
-  flex-wrap: wrap;
   @media screen and (max-width: 1400px) {
-    /* flex-direction: column; */
+    flex-direction: column;
   }
 `;
 
@@ -59,15 +58,15 @@ function SignUp() {
           <FaGoogle /> Continue with google
         </Button>
         <SocailIconWrapp>
-          <Button fullWidth={isMobile ? true : false}>
+          <Button fullWidth>
             <FaXTwitter />
             Twitter
           </Button>
-          <Button fullWidth={isMobile ? true : false}>
+          <Button fullWidth>
             <ImFacebook2 />
             Facebook
           </Button>
-          <Button fullWidth={isMobile ? true : false}>
+          <Button fullWidth>
             <FaDiscord />
             Discord
           </Button>

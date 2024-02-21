@@ -14,6 +14,8 @@ const ContainerWrapper = styled.div`
   height: 150px;
   position: relative;
   z-index: 100;
+  max-width: 500px;
+  width: 100%;
   @media screen and (max-width: 720px) {
     padding: 0.5rem;
     margin-top: 1rem;
