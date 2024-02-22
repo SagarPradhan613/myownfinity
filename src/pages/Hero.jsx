@@ -46,9 +46,10 @@ const Hero = () => {
   return (
     <Section mt="5rem">
       <LeftShadow top={isMobile ? "0rem" : "-55rem"} />
-      <RightShadow top={isMobile ? "0rem" : "0rem"} />
+      <RightShadow top={isMobile ? "-20rem" : "-45rem"} /> 
+      <RightShadow top={isMobile ? "0rem" : "5rem"} /> 
       <ContentBox>
-        <FloatingContent
+        <FloatingContent 
           image={IMAGE_COLLECTIONS.BoxContainer1}
           top="15rem"
           left="50rem"
@@ -76,7 +77,7 @@ const Hero = () => {
           <FloatingContent
             image={IMAGE_COLLECTIONS.LContainerHalf}
             top="8rem"
-            right="-2rem"
+            right="-1.5rem"
             width="60px"
           />
         )}
