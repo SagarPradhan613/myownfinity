@@ -62,7 +62,7 @@ const Header = () => {
             </IconButton>
             <IconButton>
               <Text size="15px" hover>
-                Betting
+                Win
               </Text>
             </IconButton>
             <IconButton>
