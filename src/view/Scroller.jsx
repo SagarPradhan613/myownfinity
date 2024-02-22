@@ -44,35 +44,20 @@ const Scroller = () => {
       <Flex>
         <PartnerWrap>
           <ScrollContent>
-            <Flex gap={isMobile ? "2rem" : "6rem"}>
+            <Flex
+              gap={isMobile ? "2rem" : "6rem"}
+              width={isMobile ? "" : "500px"}
+            >
               <Image
-                src={IMAGE_COLLECTIONS.partner1}
+                src={IMAGE_COLLECTIONS.etherium}
                 width="150px"
                 mobileWidth="250px"
                 hover
               />
               <Image
-                src={IMAGE_COLLECTIONS.partner2}
+                src={IMAGE_COLLECTIONS.chainlink}
                 width="150px"
                 mobileWidth="250px"
-                hover
-              />
-              <Image
-                src={IMAGE_COLLECTIONS.partner3}
-                width="60px"
-                mobileWidth="100px"
-                hover
-              />
-              <Image
-                src={IMAGE_COLLECTIONS.partner4}
-                width="50px"
-                mobileWidth="60px"
-                hover
-              />
-              <Image
-                src={IMAGE_COLLECTIONS.partner5}
-                width="50px"
-                mobileWidth="60px"
                 hover
               />
             </Flex>

@@ -31,7 +31,7 @@ const Header = () => {
             <>
               <Text>|</Text>
               <Text color={COLORS.light} size="15px">
-                Dealing Real World Assets
+              Real World Assets On Blockchain
               </Text>
             </>
           )}

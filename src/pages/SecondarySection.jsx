@@ -25,36 +25,31 @@ function SecondarySection() {
     <Section>
       <LeftShadow top={isMobile ? "0rem" : "-30rem"} />
       <Heading align="center" maxWidth="1400px">
-        Get Your Hands On <br /> 4000+ Assets all over the platform
+        Own Real World Assets <br /> Like Never Before
       </Heading>
-      <Text align="center" maxWidth="900px">
-        In publishing and graphic design, Lorem ipsum is a placeholder text
-        commonly used to demonstrate the visual form of a document or a typeface
-        without relying on meaningful content.
-      </Text>
       <FlexWrapper>
         <SecondaryCard
           image={IMAGE_COLLECTIONS.secondayimage1}
           hoverImage={IMAGE_COLLECTIONS.secondaygif1}
-          title="Buy/Sell Real World Assets"
+          title="Buy & Sell RWAs"
           description={description}
         />
         <SecondaryCard
           image={IMAGE_COLLECTIONS.secondayimage2}
           hoverImage={IMAGE_COLLECTIONS.secondaygif2}
-          title="Lend/Borrow Real World Assets"
+          title="Lend & Borrow RWAs"
           description={description}
         />
         <SecondaryCard
           image={IMAGE_COLLECTIONS.secondayimage3}
           hoverImage={IMAGE_COLLECTIONS.secondaygif3}
-          title="Betting On Real World Assets"
+          title="RWAs Shared Ownership"
           description={description}
         />
         <SecondaryCard
           image={IMAGE_COLLECTIONS.secondayimage4}
           hoverImage={IMAGE_COLLECTIONS.secondaygif4}
-          title="Real World Assets Auction"
+          title="RWAs Auction"
           description={description}
         />
       </FlexWrapper>

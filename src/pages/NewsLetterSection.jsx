@@ -47,7 +47,7 @@ function NewsLetterSection() {
           mobTop="-5rem"
           mobLeft="0rem"
         />
-   
+
         <FloatingContent
           image={IMAGE_COLLECTIONS.BoxContainer2}
           bottom="-2rem"
@@ -68,19 +68,19 @@ function NewsLetterSection() {
           <Row>
             <Col xs={12} sm={4} md={4.5} lg={6}>
               <Flex direction="column" items={isMobile ? "center" : "start"}>
-                <Heading size="50px" >
-                  Subscribe Newsletter
-                </Heading>
+                <Heading size="50px">Subscribe To Our Newsletter</Heading>
                 <Text align={isMobile ? "center" : "start"}>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                  text commonly used to demonstrate the visual form of a
-                  document or a typeface without relying on meaningful content.
+                  Our newsletter is your key to staying informed about the
+                  latest developments, upcoming features, and exciting
+                  opportunities within the Ownfinity ecosystem. Join our
+                  community of forward-thinkers, enthusiasts, and innovators who
+                  are shaping the narrative of decentralized ownership.
                 </Text>
               </Flex>
             </Col>
             <Col xs={12} sm={4} md={3.5} lg={6}>
-              <Flex width="100%" items="center" justify="end"> 
-              <NewsLetter />
+              <Flex width="100%" items="center" justify="end">
+                <NewsLetter />
               </Flex>
             </Col>
           </Row>

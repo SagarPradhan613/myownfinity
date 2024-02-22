@@ -45,7 +45,7 @@ const Hero = () => {
   const isTab = useIsTab();
   return (
     <Section mt="5rem">
-      <LeftShadow top={isMobile ? "0rem" : "-55rem"}  />
+      <LeftShadow top={isMobile ? "0rem" : "-55rem"} />
       <RightShadow top={isMobile ? "0rem" : "0rem"} />
       <ContentBox>
         <FloatingContent
@@ -99,14 +99,17 @@ const Hero = () => {
                   Dealing in Real World Assets
                 </Heading>
                 <Text maxWidth="700px" align={isMobile ? "center" : "start"}>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                  text commonly used to demonstrate the visual form of a
-                  document or a typeface without relying on meaningful content.
+                  Ownfinity is redefining how individuals engage with real-world
+                  assets through seamless buying and selling, shared ownership
+                  models, lending, borrowing, winning opportunities, and dynamic
+                  asset auctions. Leveraging blockchain's security and
+                  transparency, Ownfinity empowers a decentralized community to
+                  actively participate in shaping the future of asset ownership.
                 </Text>
                 <Flex>
-                  <Button>Get Started</Button>
+                  <Button>DAPP</Button>
                   <Button bg={COLORS.white} color={COLORS.black}>
-                    Learn More
+                    Docs
                   </Button>
                 </Flex>
               </Flex>

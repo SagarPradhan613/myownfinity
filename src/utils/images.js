@@ -21,6 +21,8 @@ import secondaygif1 from "../assets/images/Buysell.gif";
 import secondaygif2 from "../assets/images/Lend.gif";
 import secondaygif3 from "../assets/images/Betting.gif";
 import secondaygif4 from "../assets/images/Auction.gif";
+import etherium from '../assets/images/etherium.png';
+import chainlink from '../assets/images/chainlink.png' 
 
 export const IMAGE_COLLECTIONS = {
   TextIcon,
@@ -46,4 +48,6 @@ export const IMAGE_COLLECTIONS = {
   secondaygif2,
   secondaygif3,
   secondaygif4,
+  chainlink,
+  etherium
 };

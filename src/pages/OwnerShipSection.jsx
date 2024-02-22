@@ -91,9 +91,9 @@ function OwnerShipSection() {
                 </Text>
               </Flex>
               <Flex justify={isMobile ? "center" : "start"} mt="1rem">
-                <Button>Get Started</Button>
-                <Button bg={COLORS.white} color={COLORS.black}>
-                  Learn More
+                <Button>DAPP</Button>
+                <Button bg={COLORS.white} color={COLORS.black}> 
+                  Docs
                 </Button>
               </Flex>
             </Col>

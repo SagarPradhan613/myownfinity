@@ -48,11 +48,11 @@ function SignUp() {
           <Text size="20px">Sign Up</Text>
         </Flex>
         <Flex direction={isMobile ? "column" : "row"} width="98%" gap=".5rem">
-          <Input placeholder="Enter First name" width="90%" />
-          <Input placeholder="Enter Last name" width="90%" />
+          <Input placeholder="First name" width="90%" />
+          <Input placeholder="Last name" width="90%" />
         </Flex>
         <Input placeholder="Enter Email" width="90%" type="email" />
-        <Input placeholder="Enter Password" width="90%" type="password" />
+        <Input placeholder="Choose Password" width="90%" type="password" />
         <Text>OR</Text>
         <Button fullWidth>
           <FaGoogle /> Continue with google
@@ -72,7 +72,7 @@ function SignUp() {
           </Button>
         </SocailIconWrapp>
         <Text size="13px" color={COLORS.light} align="center">
-          We do not store any data related to social login
+        Ownfinity does not store any sensitive information.
         </Text>
         <Flex width="100%" mt="1rem" mb="0rem">
           <Button fullWidth>

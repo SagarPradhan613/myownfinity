@@ -56,7 +56,7 @@ const MenuSlider = ({ setIsMenu }) => {
           <Text hover>Lend</Text>
         </IconButton>
         <IconButton>
-          <Text hover>Betting</Text>
+          <Text hover>Win</Text>
         </IconButton>
         <IconButton>
           <Text hover>Auction</Text>

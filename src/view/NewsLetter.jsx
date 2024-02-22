@@ -53,7 +53,7 @@ function NewsLetter() {
           <Flex direction="column" width="100%" gap="0.5rem">
             <Input placeholder="Enter Email" width="90%" type="email" />
             <Button fullWidth>
-              Continue <FaArrowRight />
+              Subscribe <FaArrowRight />
             </Button>
           </Flex>
         ) : (
@@ -61,7 +61,7 @@ function NewsLetter() {
             <Input placeholder="Enter Email" width="93%" type="email" />
             <ButtonWrapp>
               <Button fullWidth>
-                Continue <FaArrowRight />
+                Subscribe <FaArrowRight />
               </Button>
             </ButtonWrapp>
           </InputWrapp>

@@ -3,10 +3,11 @@ export const Links = [
     title: "Important Links",
     footers: [
       { name: "Home", link: "/" },
-      { name: "Buy/Sell RWA", link: "/" },
-      { name: "Lend RWA", link: "/" },
+      { name: "Buy/Sell", link: "/" },
+      { name: "Lend/Borrow", link: "/" },
       { name: "Betting on RWA", link: "/" },
-      { name: "RWA Auction", link: "/" },
+      { name: "Win", link: "/" },
+      { name: "Auction", link: "/" },
       { name: "Shared Ownership", link: "/" },
     ],
   },
@@ -16,13 +17,6 @@ export const Links = [
       { name: "Telegram", link: "/" },
       { name: "Twitter", link: "/" },
       { name: "Discord", link: "/" },
-    ],
-  },
-  {
-    title: "Terms",
-    footers: [
-      { name: "Privacy", link: "/" },
-      { name: "Terms & conditions", link: "/" },
     ],
   },
 ];

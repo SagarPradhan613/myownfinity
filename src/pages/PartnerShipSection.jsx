@@ -13,11 +13,10 @@ const PartnerShipSection = () => {
     <Section>
       <LeftShadow top={isMobile ? "0rem" : "-55rem"} />
       <Flex bg={COLORS.darkFaded} width="100%" direction="column" p="3rem 0rem">
-        <Heading align="center">Partnerships With Ownfinity</Heading>
+        <Heading align="center">Our Partners</Heading>
         <Text maxWidth="800px" align="center">
-          Lorem ipsum is a placeholder text commonly used to demonstrate the
-          visual form of a document or a typeface without relying on meaningful
-          content.
+          Explore the synergies that drive Ownfinity's commitment to excellence
+          and redefine the future of ownership together.
         </Text>
         <Scroller />
       </Flex>
