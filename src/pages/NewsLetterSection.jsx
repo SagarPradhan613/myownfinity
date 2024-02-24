@@ -32,6 +32,13 @@ const ContentBox = styled.div`
   }
 `;
 
+const HideInMob = styled.div`
+  display:block;
+  @media only screen and (max-width: 768px) {
+    display:none;
+  }
+`
+
 function NewsLetterSection() {
   const isMobile = useIsMobile();
   return (
@@ -47,15 +54,17 @@ function NewsLetterSection() {
           mobTop="-5rem"
           mobLeft="0rem"
         />
+        <HideInMob>
+          <FloatingContent
+            image={IMAGE_COLLECTIONS.BoxContainer2}
+            bottom="-2rem"
+            left="40rem"
+            width="110px"
+            mobTop="5rem"
+            mobLeft="15rem"
+          />
+        </HideInMob>
 
-        <FloatingContent
-          image={IMAGE_COLLECTIONS.BoxContainer2}
-          bottom="-2rem"
-          left="40rem"
-          width="110px"
-          mobTop="5rem"
-          mobLeft="15rem"
-        />
         <FloatingContent
           image={IMAGE_COLLECTIONS.LContainer2}
           bottom="4rem"

@@ -31,6 +31,14 @@ const ContentBox = styled.div`
   }
 `;
 
+const HideInMob = styled.div`
+  display:block;
+  @media only screen and (max-width: 768px) {
+    display:none;
+  }
+`
+
+
 function OwnerShipSection() {
   const isMobile = useIsMobile();
 
@@ -54,22 +62,25 @@ function OwnerShipSection() {
           mobTop="10rem"
           mobLeft="15rem"
         />
-        <FloatingContent
-          image={IMAGE_COLLECTIONS.BoxContainer2}
-          bottom="-2rem"
-          left="30rem"
-          width="90px"
-          mobTop="20rem"
-          mobLeft="0rem"
-        />
-        <FloatingContent
-          image={IMAGE_COLLECTIONS.LContainer2}
-          bottom="8rem"
-          right="0rem"
-          width="90px"
-          mobBottom="1rem"
-          mobRight="4rem"
-        />
+        <HideInMob>
+          <FloatingContent
+            image={IMAGE_COLLECTIONS.BoxContainer2}
+            bottom="-2rem"
+            left="30rem"
+            width="90px"
+            mobTop="20rem"
+            mobLeft="0rem"
+          />
+          <FloatingContent
+            image={IMAGE_COLLECTIONS.LContainer2}
+            bottom="8rem"
+            right="0rem"
+            width="90px"
+            mobBottom="1rem"
+            mobRight="4rem"
+          />
+        </HideInMob>
+
         <Container style={{ maxWidth: "100%", padding: "0px" }}>
           <Row>
             <Col xs={12} sm={4} md={4} lg={6}>
@@ -82,15 +93,15 @@ function OwnerShipSection() {
             <Col xs={12} sm={4} md={4} lg={6}>
               <Flex direction="column">
                 <Heading size="50px" align={isMobile ? "center" : "start"}>
-                Own Verified Real World Assets
+                  Own Verified Real World Assets
                 </Heading>
                 <Text align={isMobile ? "center" : "start"}>
-                At Ownfinity, each real-world asset (RWA) undergoes a rigorous verification process and is guaranteed to meet our stringent standards for authenticity. Navigate through RWAs with confidence, knowing that Ownfinity is your trusted gateway.
+                  At Ownfinity, each real-world asset (RWA) undergoes a rigorous verification process and is guaranteed to meet our stringent standards for authenticity. Navigate through RWAs with confidence, knowing that Ownfinity is your trusted gateway.
                 </Text>
               </Flex>
               <Flex justify={isMobile ? "center" : "start"} mt="1rem">
                 <Button>DAPP</Button>
-                <Button bg={COLORS.white} color={COLORS.black}> 
+                <Button bg={COLORS.white} color={COLORS.black}>
                   Docs
                 </Button>
               </Flex>

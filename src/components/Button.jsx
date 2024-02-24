@@ -5,6 +5,8 @@ import { COLORS } from "../utils/colors";
 const StyledButton = styled.button`
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 50;
   align-items: center;
   gap: 0.5rem;
   white-space: nowrap;

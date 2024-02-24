@@ -32,6 +32,8 @@ const ContentBox = styled.div`
 
 const JoinWrap = styled.div`
   display: flex;
+  position:relative;
+  z-index: 50;
   justify-content: center;
   align-items: center;
   gap: 5px;

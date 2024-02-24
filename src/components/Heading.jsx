@@ -4,6 +4,8 @@ import { COLORS } from "../utils/colors";
 
 const StyledText = styled.h1`
   font-family: "poppins";
+  position: relative;
+  z-index: 50;
   font-size: ${({ size }) => size || "65px"};
   font-weight: ${({ weight }) => weight || 600};
   max-width: ${({ maxWidth }) => maxWidth || "100%"};
