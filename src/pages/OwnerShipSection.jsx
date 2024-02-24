@@ -82,12 +82,10 @@ function OwnerShipSection() {
             <Col xs={12} sm={4} md={4} lg={6}>
               <Flex direction="column">
                 <Heading size="50px" align={isMobile ? "center" : "start"}>
-                  Real World Assets Shared Ownership
+                Own Verified Real World Assets
                 </Heading>
                 <Text align={isMobile ? "center" : "start"}>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                  text commonly used to demonstrate the visual form of a
-                  document or a typeface without relying on meaningful content.
+                At Ownfinity, each real-world asset (RWA) undergoes a rigorous verification process and is guaranteed to meet our stringent standards for authenticity. Navigate through RWAs with confidence, knowing that Ownfinity is your trusted gateway.
                 </Text>
               </Flex>
               <Flex justify={isMobile ? "center" : "start"} mt="1rem">

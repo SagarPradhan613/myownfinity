@@ -7,7 +7,6 @@ export const Links = [
       { name: "Home", link: "/" },
       { name: "Buy/Sell", link: "/" },
       { name: "Lend/Borrow", link: "/" },
-      { name: "Betting on RWA", link: "/" },
       { name: "Win", link: "/" },
       { name: "Auction", link: "/" },
       { name: "Shared Ownership", link: "/" },
