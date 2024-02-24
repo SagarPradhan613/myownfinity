@@ -42,39 +42,113 @@ const JoinWrap = styled.div`
   background: linear-gradient(to right, white, transparent);
 `;
 
+
+
 const Hero = () => {
   const isMobile = useIsMobile();
   const isTab = useIsTab();
+  console.log("is mobile", isMobile);
   return (
     <Section mt="5rem">
       <LeftShadow top={isMobile ? "0rem" : "-55rem"} />
-      <RightShadow top={isMobile ? "-20rem" : "-45rem"} /> 
-      <RightShadow top={isMobile ? "0rem" : "5rem"} /> 
+      <RightShadow top={isMobile ? "-20rem" : "-45rem"} />
+      <RightShadow top={isMobile ? "0rem" : "5rem"} />
       <ContentBox>
-        <FloatingContent 
-          image={IMAGE_COLLECTIONS.BoxContainer1}
-          top="15rem"
-          left="50rem"
-          mobLeft="15rem"
-          mobTop="19rem"
-          width="60px"
-        />
-        <FloatingContent
-          image={IMAGE_COLLECTIONS.BoxContainer2}
-          top="-2rem"
-          left="45rem"
-          mobLeft="5rem"
-          mobTop="1rem"
-          width="90px"
-        />
-        <FloatingContent
-          image={IMAGE_COLLECTIONS.LContainer1}
-          top="25rem"
-          left="40rem"
-          width="140px"
-          mobLeft="0rem"
-          mobBottom="-10rem"
-        />
+        {!isMobile ?
+          <>
+            <FloatingContent
+              image={IMAGE_COLLECTIONS.BoxContainer1}
+              top="15rem"
+              left="50rem"
+              mobLeft="15rem"
+              mobTop="19rem"
+              width="60px"
+            />
+          </>
+          :
+          <>
+            <FloatingContent
+              image={IMAGE_COLLECTIONS.BoxContainer1}
+              top="25rem"
+              left="50rem"
+              mobLeft="15rem"
+              mobTop="25rem"
+              width="60px"
+            />
+          </>
+        }
+
+        {!isMobile ?
+          <>
+            <FloatingContent
+              image={IMAGE_COLLECTIONS.BoxContainer2}
+              top="-2rem"
+              left="45rem"
+              mobLeft="5rem"
+              mobTop="1rem"
+              width="90px"
+            />
+          </>
+          :
+          <>
+            <FloatingContent
+
+              image={IMAGE_COLLECTIONS.BoxContainer2}
+              top="2rem"
+              left="45rem"
+              mobLeft="-1rem"
+              mobTop="44rem"
+              width="90px"
+            />
+          </>
+        }
+
+
+
+        {!isMobile ?
+          <>
+            <FloatingContent
+              image={IMAGE_COLLECTIONS.LContainer1}
+              top="25rem"
+              left="40rem"
+              width="140px"
+              mobLeft="0rem"
+              mobBottom="-10rem"
+            />
+          </>
+          :
+          <>
+            <FloatingContent
+              image={IMAGE_COLLECTIONS.LContainer1}
+              top="25rem"
+              left="40rem"
+              width="140px"
+              mobLeft="0rem"
+              mobBottom="-10rem"
+            />
+          </>
+
+        }
+
+{/* 
+        {!isMobile ?
+          <>
+
+          </>
+          :
+          <>
+            <FloatingContent
+              image={IMAGE_COLLECTIONS.BoxContainer2}
+              top="2rem"
+              left="45rem"
+              mobLeft="-2rem"
+              mobTop="55rem"
+              width="50px"
+            />
+          </>
+        } */}
+
+
         {!isTab && (
           <FloatingContent
             image={IMAGE_COLLECTIONS.LContainerHalf}

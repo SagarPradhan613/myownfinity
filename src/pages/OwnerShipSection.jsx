@@ -51,7 +51,7 @@ function OwnerShipSection() {
           top="-1rem"
           left="-1rem"
           width="140px"
-          mobTop="0rem"
+          mobTop="-6rem"
           mobLeft="0rem"
         />
         <FloatingContent
@@ -59,8 +59,8 @@ function OwnerShipSection() {
           top="-1rem"
           right="19rem"
           width="60px"
-          mobTop="10rem"
-          mobLeft="15rem"
+          mobTop="30rem"
+          mobLeft="16rem"
         />
         <HideInMob>
           <FloatingContent

@@ -32,9 +32,9 @@ const PartnerWrap = styled.div`
 const ScrollContent = styled.div`
   display: inline-block;
 
-  @media screen and (max-width: 720px) {
-    animation: ${SlideAnimation} 20s linear infinite;
-  }
+  // @media screen and (max-width: 720px) {
+  //   animation: ${SlideAnimation} 20s linear infinite;
+  // }
 `;
 
 const Scroller = () => {
@@ -51,13 +51,13 @@ const Scroller = () => {
               <Image
                 src={IMAGE_COLLECTIONS.etherium}
                 width="150px"
-                mobileWidth="250px"
+                mobileWidth="150px"
                 hover
               />
               <Image
                 src={IMAGE_COLLECTIONS.chainlink}
                 width="150px"
-                mobileWidth="250px"
+                mobileWidth="150px"
                 hover
               />
             </Flex>

@@ -70,8 +70,8 @@ function NewsLetterSection() {
           bottom="4rem"
           right="0rem"
           width="80px"
-          mobTop="20rem"
-          mobLeft="0rem"
+          mobTop="25rem"
+          mobLeft="15rem"
         />
         <Container style={{ maxWidth: "100%", padding: "0px" }}>
           <Row>
